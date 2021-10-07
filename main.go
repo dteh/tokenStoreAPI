@@ -20,5 +20,5 @@ func main() {
 	http.HandleFunc("/tokens", h.TokenEndpoint)
 
 	// start the http server
-	go http.ListenAndServe("0.0.0.0:1234", nil)
+	http.ListenAndServe("0.0.0.0:1234", nil)
 }
